@@ -1,0 +1,30 @@
+*{margin: 0; padding: 0;}
+button{
+  border: none;
+  outline: none;
+  padding: 6px 24px;
+  background: #557788;
+  color: #fff;
+  font-size: 16px;
+}
+button:active{
+  background: #668899;
+  color: #000;
+}
+#app{
+  border: 1px dashed #336699;
+  padding: 40px;
+}
+#screen{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.tips{
+  margin: 10px 0;
+}
+
+#options button{
+  margin-right: 20px;
+}
