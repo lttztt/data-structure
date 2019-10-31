@@ -57,20 +57,21 @@ const removeNode = (tree, node) =>{
   siblings.splice(index, 1)
 }
 
-let tree = createTree(10)
-let node1 = addChild(tree, 20)
-let node2 = addChild(tree, 30)
-let node3 = addChild(tree, 40)
 
+const tree = createTree(10);
+const node2 = addChild(tree, 20);
+const node3 = addChild(tree, 30);
+addChild(tree, 40);
+const node5 = addChild(tree, 50);
+addChild(node2, 201);
+addChild(node2, 202);
+addChild(node2, 203);
+addChild(node2, 204);
 console.log(tree);
-setTimeout(() => {
-  let remove = removeNode(tree, node2)
-  console.log(tree);
-}, 3000)
-// let res = find(tree, node2)
-// console.log(res);
 
+const fn = node => {
+  console.log(node.data);
+};
 
-// travel(tree, (item)=>{
-//   console.log(item.data)
-// })
+removeNode(tree, node5);
+console.log(tree);
